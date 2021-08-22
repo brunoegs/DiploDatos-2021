@@ -11,7 +11,7 @@ Miembros:
 # Documentación
 
 ## Criterios de exclusión de ejemplos
-  1. Se eliminan registros donde las variables `price`, `car`, `bathroom`, `rooms`  superen en 2.5 veces el tercer cuartil, ya que estos valores son considerados valores extremos, y dichos ejemplos no son considerados relevantes para la población que se quiere evaluar.
+  1. Se eliminan registros donde las variables `Price`, `Car`, `Bathroom`, `Rooms`  superen en 2.5 veces el tercer cuartil, ya que estos valores son considerados valores extremos, y dichos ejemplos no son considerados relevantes para la población que se quiere evaluar.
 
 ## Características seleccionadas
   
