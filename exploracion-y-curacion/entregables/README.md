@@ -11,7 +11,7 @@ Miembros:
 # Documentación
 
 ## Criterios de exclusión de ejemplos
-  1. Se eliminan registros donde las variables 'price', 'car', 'bathroom', 'rooms'  superen en 2.5 veces el tercer cuartil, ya que estos valores son considerados valores extremos, y dichos ejemplos no son considerados relevantes para la población que se quiere evaluar.
+  1. Se eliminan registros donde las variables `price`, `car`, `bathroom`, `rooms`  superen en 2.5 veces el tercer cuartil, ya que estos valores son considerados valores extremos, y dichos ejemplos no son considerados relevantes para la población que se quiere evaluar.
 
 ## Características seleccionadas
   
@@ -41,8 +41,8 @@ Todas las características categóricas fueron codificadas con un método OneHot
   13. airbnb_monthly_price_mean:  Se agrega el precio promedio mensual de publicaciones de la plataforma AirBnB en el mismo código postal.
 
 ## Transformaciones
-  1. Las variables 'airbnb_price_mean', 'airbnb_record_count', 'airbnb_weekly_price_mean', 'airbnb_monthly_price_mean' fueron imputadas utilizando el Simple Imputer utilizando como estrategia imputación por la media 
-  2. Las columnas `YearBuilt` y 'BuildingArea fueron agregadas posteriormente a la matriz de datos obtenida, luego de realizar el encoding e imputadas utilizando el IterativeImputer con un estimador KNeighborsRegressor utilizando todo el conjunto de variables seleccionadas, siendo previamente escaladas con el metodo MinMaxScaler.
+  1. Las variables `airbnb_price_mean`, `airbnb_record_count`, `airbnb_weekly_price_mean`, `airbnb_monthly_price_mean` fueron imputadas utilizando el Simple Imputer utilizando como estrategia imputación por la media 
+  2. Las columnas `YearBuilt` y `BuildingArea` fueron agregadas posteriormente a la matriz de datos obtenida, luego de realizar el encoding e imputadas utilizando el IterativeImputer con un estimador KNeighborsRegressor utilizando todo el conjunto de variables seleccionadas, siendo previamente escaladas con el metodo MinMaxScaler.
 
 ## Datos aumentados
   1. Se agregan las primeras 5 columnas correspondientes a las 5 primeras componentes principales, obtenidas a través del método de PCA, aplicado sobre el conjunto de datos totalmente procesado.
